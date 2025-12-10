@@ -1,0 +1,19 @@
+Shell Script
+1. Home 
+
+#!/bin/bash
+apt update
+apt install apache2 -y
+echo "Hello am Sanket This is My IP ID #hostname" > /var/www/html/index.html
+systemctl start apache2
+systemctl enable apache2
+
+2. Payment
+
+#!/bin/bash
+apt update
+apt install apache2 -y
+mkdir /var/www/html/payment
+echo "This Is Payment Page i Accept UPI, NETBANKING And Bank Transfer" > /var/www/html/payment/index.html
+systemctl start apache2
+systemctl enable apache2
